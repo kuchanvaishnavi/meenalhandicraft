@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meenal Handicraft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <img src="image/meenal_handicraft_logo-removebg-preview.png" height="80"width="150">
+        </div>
+        <div class="col-md-6 p-4">
+            <form >
+                
+             <input class="form-control me-2" type="search" placeholder="Search For Product" aria-label="Search">
+             <i class="fa fa-search" id="icon1"></i>
+            </form>
+        </div>
+        <div class="col-md-4 p-4 mt-2 ">
+          <i class="fa-regular fa-heart"></i>&nbsp
+           <a href="#" id="icon2">Wishlist</a>&nbsp &nbsp
+            <i class="fa-solid fa-user"></i>&nbsp 
+            <a href="#" id="icon2">Profile</a>&nbsp &nbsp
+            <i class="fa-solid fa-cart-shopping"></i>&nbsp &nbsp
+            <a href="shopping.html" class="text-decoration-none text-dark ps-2">Cart</a>&nbsp &nbsp
+        </div>
+    </div>
+</div>
+
+<hr id="line1">
+<!-- nav start -->
+<nav class="navbar navbar-expand-lg navbar-light " id="nav1">
+<div class="container ">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="About.html">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="category.html">Category</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" href="Product.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Shop
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="shopping.html">shopping</a></li>
+          <li><a class="dropdown-item" href="Product.html"> Product</a></li>
+          <li><a class="dropdown-item" href="singleProduct2.html"> Single Product</a></li>
+          <li><a class="dropdown-item" href="#">Services</a></li>
+          <li><a class="dropdown-item" href="#">Blog</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="Contact.html">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#">Feedback</a>
+      </li>
+    </ul>
+    <form class="d-flex">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="Login.html">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="Register.html">Register</a>
+          </li>
+      </ul>
+    </form>
+  </div>
+</div>
+</nav>
+<hr id="line1">
+<!-- nav end -->
+
+
+  <section class="h-100 h-custom" style="background-color: #ffe6e6;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12">
+          <div class="card card-registration card-registration-2" style="border-radius: 15px;height:auto; background-color: white;">
+            <div class="card-body p-0">
+              <div class="row g-0">
+                <div class="col-lg-8">
+                  <div class="p-5">
+                    <div class="d-flex justify-content-between align-items-center mb-5">
+                      <h3 class="fw-bold mb-0 text-black">Shopping Cart</h3>
+                      <h6 class="mb-0 text-muted">3 items</h6>
+                    </div>
+                    <hr class="my-4">
+  
+                    <div class="row mb-4 d-flex justify-content-between align-items-center">
+                      <div class="col-md-2 col-lg-2 col-xl-2">
+                        <img
+                          src="image/diya1 (1).png"
+                          class="img-fluid rounded-3" alt="diya">
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-3">
+                        <h6 class="text-muted">Diya</h6>
+                        <h6 class="text-black mb-0">Color : Green</h6>
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="fas fa-minus"></i>
+                        </button>
+  
+                        <input id="form1" min="0" name="quantity" value="1" type="number"
+                          class="form-control form-control-sm" />
+  
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                        <h6 class="mb-0">€ 44.00</h6>
+                      </div>
+                      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                        <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                      </div>
+                    </div>
+  
+                    <hr class="my-4">
+  
+                    <div class="row mb-4 d-flex justify-content-between align-items-center">
+                      <div class="col-md-2 col-lg-2 col-xl-2">
+                        <img
+                          src="image/diya1 (2).png"
+                          class="img-fluid rounded-3" alt="diya">
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-3">
+                        <h6 class="text-muted">Diya</h6>
+                        <h6 class="text-black mb-0">Color : Red</h6>
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="fas fa-minus"></i>
+                        </button>
+  
+                        <input id="form1" min="0" name="quantity" value="1" type="number"
+                          class="form-control form-control-sm" />
+  
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                        <h6 class="mb-0">€ 44.00</h6>
+                      </div>
+                      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                        <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                      </div>
+                    </div>
+  
+                    <hr class="my-4">
+  
+                    <div class="row mb-4 d-flex justify-content-between align-items-center">
+                      <div class="col-md-2 col-lg-2 col-xl-2">
+                        <img
+                          src="image/diya1 (3).png"
+                          class="img-fluid rounded-3" alt="diya">
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-3">
+                        <h6 class="text-muted">Diya</h6>
+                        <h6 class="text-black mb-0">Color : Yellow</h6>
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="fas fa-minus"></i>
+                        </button>
+  
+                        <input id="form1" min="0" name="quantity" value="1" type="number"
+                          class="form-control form-control-sm" />
+  
+                        <button class="btn btn-link px-2"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                        <h6 class="mb-0">€ 44.00</h6>
+                      </div>
+                      <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                        <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                      </div>
+                    </div>
+  
+                    <hr class="my-4">
+  
+                    <div class="pt-5">
+                      <h6 class="mb-0"><a href="index.html" class="text-body"><i
+                            class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 bg-grey" style="background-color: #fbfafa;">
+                              <div class="p-5">
+                    <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
+                    <hr class="my-4">
+  
+                    <div class="d-flex justify-content-between mb-4">
+                      <h5 class="text-uppercase">items 3</h5>
+                      <h5>€ 132.00</h5>
+                    </div>
+  
+                    <h5 class="text-uppercase mb-3">Shipping</h5>
+  
+                    <div class="mb-4 pb-2">
+                      <select class="select">
+                        <option value="1">Standard-Delivery- €5.00</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                      </select>
+                    </div>
+  
+                    <h5 class="text-uppercase mb-3">Give code</h5>
+  
+                    <div class="mb-5">
+                      <div class="form-outline">
+                        <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Examplea2">Enter your code</label>
+                      </div>
+                    </div>
+  
+                    <hr class="my-4">
+  
+                    <div class="d-flex justify-content-between mb-5">
+                      <h5 class="text-uppercase">Total price</h5>
+                      <h5>€ 137.00</h5>
+                    </div>
+  
+                    <button type="button" class="btn btn-dark btn-block btn-lg"
+                      data-mdb-ripple-color="dark">Register</button>
+  
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+ <!-- Footer Start -->
+<div class="site-footer">
+    <div class="container p-5 mt-5">
+      <div class="row gx-5">    
+    <div class="col-lg-4">
+    <div class="widget">
+      <img src="image/meenal_handicraft_logo-removebg-preview.png" height="80"width="150">
+      <p>meenal is a global online marketplace, where people<br> come together to make, sell, buy and collect<br> unique items.</p>
+    </div> 
+    <div class="widget">
+    <!-- <h3>Follow us on:</h3> -->
+    <ul class="list-unstyled social">
+    <li><a href="#"><span><i class="fa-brands fa-instagram"></i></span></a></li>
+    <li><a href="#"><span><i class="fa-brands fa-twitter"></i></span></a></li>
+    <li><a href="#"><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
+    <li><a href="#"><span ><i class="fa-brands fa-linkedin"></i></span></a></li>
+    </ul>
+    </div> 
+    </div> 
+    <div class="col-lg-2">
+      <div class="widget">
+      <h3>Category</h3>
+      <ul class="list-unstyled float-left links">
+        <li><a href="#">Bamboo Hnadicraft</a></li>
+        <li><a href="#"> Dhokra Handicraft</a></li>
+        <li><a href="#">Lac Handicraft</a></li>
+        <li><a href="#">Paper Handicraft</a></li>
+        <li><a href="#">Jute Handicraft</a></li>
+        <li><a href="#">Clay Hnadicraft</a></li>
+        
+        </ul>
+      </div> 
+      </div> 
+  
+    <div class="col-lg-2 ml-auto">
+    <div class="widget">
+    <h3>Link</h3>
+    <ul class="list-unstyled float-left links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Shop</a></li>
+    <li><a href="#">Category</a></li>
+    <li><a href="#">Product</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact Us</a></li>
+  
+    </ul>
+     </div> 
+    </div> 
+    
+    <div class="col-lg-4">
+    <div class="widget">
+    <h3>Contact</h3>
+    <form >             
+      <input class="form-control me-2 text-white " type="search" id="search1" placeholder="Search For Product" aria-label="Search">
+      <i class="fa-solid fa-paper-plane" id="icon5"></i>
+     </form>  
+     <br>
+     <i class="fa-solid fa-location-dot"></i>
+     <span> &nbsp &nbsp 44, Jamna Dairy, Ajmer RoadSodala,<br> &nbsp &nbsp &nbsp &nbsp Jaipur-302006Rajasthan, India</span><br>
+    <ul class="list-unstyled links mb-4">
+    <li><i class="fa-solid fa-envelope"></i><a href="tel://11234567890"> &nbsp &nbsp +91 9404301367</a></li><br>
+    <li><i class="fa-solid fa-phone"></i><a href="mailto:info@mydomain.com">&nbsp &nbsp svvidap19@gmail.com</a></li>
+    </ul>
+    </div> 
+    </div> 
+    </div> 
+    <div class="row ">
+    <div class="col-12 text-center">
+      <hr>
+    <p>
+      © 2023 www.meenal.com. All rights reserved.  </p>
+    </div>
+    </div>
+    </div> 
+    </div>
+  <!-- Footer End -->
+  
+  
+    
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+  </html>
